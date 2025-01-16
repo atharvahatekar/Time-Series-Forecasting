@@ -19,35 +19,6 @@ This project aims to provide a comprehensive approach to handling and forecastin
   - Seasonal decomposition
   - Scaling and transformations
 
-### Prerequisites
-To run this project, you need the following libraries:
-- Python 3.x
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- statsmodels
-- pmdarima
-
-Install the required libraries using pip:
-```bash
-pip install pandas numpy matplotlib seaborn statsmodels pmdarima
-```
-
-### Running the Project
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/atharvahatekar/time-series-forecasting.git
-   cd time-series-forecasting
-   ```
-2. Open the main Python script or Jupyter Notebook file.
-3. Replace the placeholder dataset with your time series data.
-4. Run the code to:
-   - Visualize the data and perform exploratory data analysis.
-   - Identify and handle outliers.
-   - Fit ARIMA, SARIMA, or AutoARIMA models.
-   - Generate forecasts.
-
 ## Project Structure
 - **data/**: Contains example datasets used in the project.
 - **notebooks/**: Jupyter notebooks for exploratory data analysis and modeling.
@@ -64,8 +35,8 @@ pip install pandas numpy matplotlib seaborn statsmodels pmdarima
    - Use IQR to detect and remove extreme values.
    - Apply statistical transformations if necessary.
 
-![Before Outlier Removal](src\withOutliers.png)
-![After Outlier Removal](src\withoutOutliers.png)
+![Before Outlier Removal](src/withOutliers.png)
+![After Outlier Removal](src/withoutOutliers.png)
 
 3. **Modeling:**
    - Use ARIMA/SARIMA to model and forecast the time series.
@@ -75,14 +46,11 @@ pip install pandas numpy matplotlib seaborn statsmodels pmdarima
    - Compare models using metrics such as MAE, RMSE, and MAPE.
    - Visualize residuals to ensure no patterns remain.
 
-   ![Forecasting Results](src\output.png)
+   ![Forecasting Results](src/output.png)
 
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
 For any questions or feedback, please contact:
