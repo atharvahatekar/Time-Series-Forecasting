@@ -27,7 +27,7 @@ This project aims to provide a comprehensive approach to handling and forecastin
 
 2. **Outlier Detection and Handling:**
    - Use IQR to detect and remove extreme values.
-   - Apply statistical transformations using IQR and some more statistical measures.
+   - Apply statistical transformations using IQR and some more statistical measures.\n
 **Data Contains Outliers**
 ![Before Outlier Removal](src/withOutliers.png)
 **Data After removing Outliers**
