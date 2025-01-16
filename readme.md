@@ -19,12 +19,6 @@ This project aims to provide a comprehensive approach to handling and forecastin
   - Seasonal decomposition
   - Scaling and transformations
 
-## Project Structure
-- **data/**: Contains example datasets used in the project.
-- **notebooks/**: Jupyter notebooks for exploratory data analysis and modeling.
-- **src/**: Python scripts for preprocessing, modeling, and evaluation.
-- **results/**: Output plots and forecast results.
-- **README.md**: Project documentation.
 
 ## Methodology
 1. **Exploratory Data Analysis (EDA):**
@@ -33,9 +27,10 @@ This project aims to provide a comprehensive approach to handling and forecastin
 
 2. **Outlier Detection and Handling:**
    - Use IQR to detect and remove extreme values.
-   - Apply statistical transformations if necessary.
-
+   - Apply statistical transformations using IQR and some more statistical measures.
+**Data Contains Outliers**
 ![Before Outlier Removal](src/withOutliers.png)
+**Data After removing Outliers**
 ![After Outlier Removal](src/withoutOutliers.png)
 
 3. **Modeling:**
