@@ -1,9 +1,10 @@
 # Time Series Forecasting Project
 
-Welcome to the Time Series Forecasting project! This repository contains an implementation of various statistical and machine learning methods to analyze and forecast time series data. The focus of this project is to explore, preprocess, and model time series data using established techniques such as ARIMA, SARIMA, and AutoARIMA. Additionally, statistical tools such as ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) are employed to determine model parameters, and outlier detection is performed using methods like IQR (Interquartile Range).
+Welcome to the Time Series Forecasting project! This repository contains an implementation of various statistical and machine learning methods to analyze and forecast time series data. The focus of this project is to explore, preprocess, and model time series data using established techniques such as ARIMA, SARIMA, and AutoARIMA. Additionally, statistical tools such as ACF (Autocorrelation Function) and PACF (Partial Autocorrelation Function) for model parameters, IQR and boxplots to detremine outliers detection and removals
 
 ## Project Overview
-Time series forecasting is a crucial technique in many industries for tasks such as demand planning, stock market analysis, and resource optimization. This project aims to provide a comprehensive approach to handling and forecasting time series data, from data preprocessing to model evaluation.
+Time series forecasting is a crucial technique in many industries for tasks such as demand planning, stock market analysis, and resource optimization.
+This project aims to provide a comprehensive approach to handling and forecasting time series data, from data preprocessing to model evaluation.
 
 ### Key Features:
 - **Algorithms Used:**
@@ -17,8 +18,6 @@ Time series forecasting is a crucial technique in many industries for tasks such
   - Handling missing values
   - Seasonal decomposition
   - Scaling and transformations
-
-## Getting Started
 
 ### Prerequisites
 To run this project, you need the following libraries:
@@ -38,7 +37,7 @@ pip install pandas numpy matplotlib seaborn statsmodels pmdarima
 ### Running the Project
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/time-series-forecasting.git
+   git clone https://github.com/atharvahatekar/time-series-forecasting.git
    cd time-series-forecasting
    ```
 2. Open the main Python script or Jupyter Notebook file.
@@ -65,6 +64,9 @@ pip install pandas numpy matplotlib seaborn statsmodels pmdarima
    - Use IQR to detect and remove extreme values.
    - Apply statistical transformations if necessary.
 
+![Before Outlier Removal](src\withOutliers.png)
+![After Outlier Removal](src\withoutOutliers.png)
+
 3. **Modeling:**
    - Use ARIMA/SARIMA to model and forecast the time series.
    - Employ AutoARIMA for automated parameter selection.
@@ -73,11 +75,8 @@ pip install pandas numpy matplotlib seaborn statsmodels pmdarima
    - Compare models using metrics such as MAE, RMSE, and MAPE.
    - Visualize residuals to ensure no patterns remain.
 
-## Results
-The project demonstrates how to effectively preprocess and forecast time series data. Results include:
-- Forecast plots for various time horizons
-- Model comparison metrics
-- Insights from exploratory data analysis
+   ![Forecasting Results](src\output.png)
+
 
 ## Contributing
 Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
@@ -87,9 +86,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For any questions or feedback, please contact:
-- **Name:** Your Name
-- **Email:** your.email@example.com
-- **GitHub:** [yourusername](https://github.com/yourusername)
+- **Name:** Atharva Hatekar
+- **Email:** atharva_hatekar@yahoo.in
+- **GitHub:** [atharvahatekar](https://github.com/atharvahatekar)
 
 ---
 Thank you for exploring this project! I hope it serves as a valuable resource for your time series forecasting endeavors.
